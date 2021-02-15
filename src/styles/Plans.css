@@ -1,0 +1,16 @@
+.plans > p {
+  padding: 20px;
+}
+
+.plans > button {
+  padding: 10px 20px;
+  margin-left: auto;
+  font-size: 1rem;
+  margin-top: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

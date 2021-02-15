@@ -26,10 +26,18 @@
   cursor: pointer;
 }
 
+.nav__logo:hover {
+  opacity: 0.9;
+}
+
 .nav__avatar {
   position: fixed;
   right: 20px;
   width: 30px;
   object-fit: contain;
   cursor: pointer;
+}
+
+.nav__avatar:hover {
+  opacity: 0.9;
 }

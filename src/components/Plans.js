@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Plans.css";
 
 function Plans() {
+  const [state] = useState([
+    {
+      id: 1,
+      plan: "Basic",
+      pixel: "480p",
+      button: "Subscribe",
+    },
+    { id: 2, plan: "Standard", pixel: "1080p", button: "Subscribe" },
+    { id: 3, plan: "Premium", pixel: "4K+HDR", button: "Subscribe" },
+  ]);
+
   return (
-    <div className="plans">
-      <p>Renewal date: 07/01/2021</p>
-      <h4>NetFlix Standard</h4>
-      <h5>1080p</h5>
-      <button>Subscribe</button>
-      <h4>NetFlix Basic</h4>
-      <h5>480p</h5>
-      <button>Subscribe</button>
-      <h4>NetFlix Premium</h4>
-      <h5>4K+HDR</h5>
-      <button>Current Package</button>
+    <div className="plansScreen">
+      {state.map((info) => (
+        <div className="plansScreen __plan" key={info.id}>
+          <div className="plansScreen__info">
+            <h4>{info.plan} ~</h4>
+            <h5>{info.pixel}</h5>
+            <button>{info.button}</button>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

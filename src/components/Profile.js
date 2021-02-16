@@ -22,7 +22,8 @@ function Profile() {
           <div className="profile__details">
             <h2>{user.email}</h2>
             <div className="profile__plans">
-              <h3>Plans (Current Plan: premium)</h3>
+              <h3>Plans (Current Plan: Premium)</h3>
+              <p>Renewal date: 07/01/2021</p>
               <Plans />
               <button
                 onClick={() => auth.signOut()}
